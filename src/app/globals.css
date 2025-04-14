@@ -1,3 +1,15 @@
 @import "tailwindcss";
 
+/* globals.css */
+.page-content {
+  transition: opacity 300ms ease;
+}
 
+.page-content.loading {
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
