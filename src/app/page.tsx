@@ -87,7 +87,7 @@ export default function LandingPage() {
                   </div>
                   <div className="flex items-center justify-center">
                     <Image
-                      src="/img/CodeImage.jpg"
+                      src="/semantic/img/CodeImage.jpg"
                       width={550}
                       height={550}
                       alt="Hero Image"
