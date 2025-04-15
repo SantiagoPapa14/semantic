@@ -75,7 +75,7 @@ export default function LandingPage() {
                     </p>
                     <div className="w-full mt-8 lg:mt-0">
                       <Image
-                        src="/semantic/img/CodeImage.jpg"
+                        src="/img/CodeImage.jpg"
                         width={600}
                         height={600}
                         alt="Hero Image"
@@ -98,7 +98,7 @@ export default function LandingPage() {
                   </div>
                   <div className="w-3/4 mt-8 lg:mt-0">
                     <Image
-                      src="/semantic/img/CodeImage.jpg"
+                      src="/img/CodeImage.jpg"
                       width={600}
                       height={600}
                       alt="Hero Image"
@@ -235,7 +235,7 @@ export default function LandingPage() {
                   </div>
                   <div className="w-full md:w-1/2 order-1 lg:order-2">
                     <Image
-                      src="/semantic/img/CoderImage.jpeg"
+                      src="/img/CoderImage.jpeg"
                       width={600}
                       height={400}
                       alt="Our Approach"
