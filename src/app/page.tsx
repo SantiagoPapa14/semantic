@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 
 import { LanguageSelector } from "../components/LanguageSelector";
+import { ContactForm } from "../components/ContactForm";
 import {
   Accordion,
   AccordionContent,
@@ -322,53 +323,7 @@ export default function LandingPage() {
                       {t("contactDescription")}
                     </p>
                   </div>
-                  <form className="space-y-6">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                      <div>
-                        <label className="block text-left mb-2">
-                          {t("firstName")}
-                        </label>
-                        <input
-                          className="w-full px-4 py-3 border border-gray-200 rounded-md"
-                          placeholder={t("firstNamePlaceholder")}
-                        />
-                      </div>
-                      <div>
-                        <label className="block text-left mb-2">
-                          {t("lastName")}
-                        </label>
-                        <input
-                          className="w-full px-4 py-3 border border-gray-200 rounded-md"
-                          placeholder={t("lastNamePlaceholder")}
-                        />
-                      </div>
-                      <div className="sm:col-span-2">
-                        <label className="block text-left mb-2">
-                          {t("email")}
-                        </label>
-                        <input
-                          className="w-full px-4 py-3 border border-gray-200 rounded-md"
-                          placeholder={t("emailPlaceholder")}
-                          type="email"
-                        />
-                      </div>
-                      <div className="sm:col-span-2">
-                        <label className="block text-left mb-2">
-                          {t("message")}
-                        </label>
-                        <textarea
-                          className="w-full px-4 py-3 border border-gray-200 rounded-md min-h-[150px]"
-                          placeholder={t("messagePlaceholder")}
-                        />
-                      </div>
-                    </div>
-                    <button
-                      type="submit"
-                      className="w-full bg-black text-white py-3 rounded-md hover:bg-black/80 transition-colors"
-                    >
-                      {t("sendMessage")}
-                    </button>
-                  </form>
+                  <ContactForm t={t as (key: string) => string} />
                 </div>
               </div>
             </section>
