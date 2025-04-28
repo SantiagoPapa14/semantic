@@ -10,7 +10,7 @@ export const ContactForm = ({ t }: { t: (key: string) => string }) => {
     delete data["lastName"];
 
     try {
-      const response = await fetch("http://forms.semantic.com.ar/semantic", {
+      const response = await fetch("https://forms.semantic.com.ar/semantic", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
